@@ -1518,4 +1518,49 @@ ALTER TABLE `departments`
 --
 ALTER TABLE `personal_details`
   ADD PRIMARY KEY (`personal_id`),
-  ADD UNIQUE KEY `email_id` (`ema
+  ADD UNIQUE KEY `email_id` (`email_id`),
+  ADD UNIQUE KEY `mobile` (`phone_no`);
+
+--
+-- Indexes for table `team_details`
+--
+ALTER TABLE `team_details`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `caste_name`
+--
+ALTER TABLE `caste_name`
+  MODIFY `caste_id` bigint(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=557;
+--
+-- AUTO_INCREMENT for table `city`
+--
+ALTER TABLE `city`
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=606;
+--
+-- AUTO_INCREMENT for table `departments`
+--
+ALTER TABLE `departments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `personal_details`
+--
+ALTER TABLE `personal_details`
+  MODIFY `personal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `team_details`
+--
+ALTER TABLE `team_details`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
